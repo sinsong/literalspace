@@ -1,0 +1,24 @@
+{
+  "name": "literalspace",
+  "version": "1.0.0",
+  "description": "My neat Nuxt.js project",
+  "author": "literal",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.4.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "bootstrap": "^4.1.3",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.9"
+  }
+}
