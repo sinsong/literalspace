@@ -39,7 +39,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-  background-image: url(/photo-by-pasquale-vitiello-n-1201.jpg);
+  background-image: url(/moon.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
