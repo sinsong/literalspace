@@ -44,6 +44,12 @@ export default {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 720px) {
+  .container {
+    background-image: url(/moon-mobie.jpg);
+  }
+}
+
 .links {
   padding-top: 15px;
 }
