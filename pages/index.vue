@@ -39,7 +39,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-  background-image: url(/moon.png);
+  background-image: url(/bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
 }
