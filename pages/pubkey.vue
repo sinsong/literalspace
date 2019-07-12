@@ -3,47 +3,34 @@
     <h1 class="title">Public Key</h1>
     <pre style="font-size: 20px">E-mail: 714554019@qq.com</pre>
     <pre style="font-size: 20px">Finger print:</pre>
-    <pre style="font-size: 20px">E010 C4C9 B2EA E272 EF15  0DDD 3099 D4BB 7E40 0971</pre>
-    <b-button href="/public_key.asc" style="margin: 0 auto;" variant="outline-success">Download Public Key</b-button>
-    <textarea v-if="false" class="pubkey" v-model="publickey" readonly="readonly"></textarea>
-    <h1 class="title">Supported MIME</h1>
-    <b-list-group style="width: 260px; margin: 0 auto;">
-      <b-list-group-item>text/plain</b-list-group-item>
-      <b-list-group-item>image/jpeg</b-list-group-item>
-      <b-list-group-item>image/png</b-list-group-item>
-      <b-list-group-item>video/mpeg</b-list-group-item>
-      <b-list-group-item>audio/mpeg</b-list-group-item>
-      <b-list-group-item>text/plain</b-list-group-item>
-    </b-list-group>
+    <pre style="font-size: 16px">E010 C4C9 B2EA E272 EF15  0DDD 3099 D4BB 7E40 0971</pre>
+    <a href="/public_key.asc" style="padding: 10px;">plain text</a>
+    <pre class="pubkey">{{publickey}}</pre>
   </section>
 </template>
 
 <style>
 .container {
-  margin: auto;
-  padding: 100px 0 0 0;
   min-height: 100vh;
+  max-width: 600px;
 
   text-align: center;
+
+  margin-top: 70px;
 }
 
 .title {
   font-size: 50px;
-  margin: 25px;
+  margin: 10px;
 }
 
 .pubkey {
-  min-width: 600px;
-  min-height: 350px;
-  overflow-x: hidden;
+  text-align: left;
   font-size: 16px;
   line-height: 1em;
   font-family: Consolas, monospace;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 10px;
   word-break: keep-all;
+  overflow: hidden;
 }
 </style>
 
