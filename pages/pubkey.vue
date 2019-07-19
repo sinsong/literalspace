@@ -1,31 +1,30 @@
 <template>
   <section class="container">
     <h1 class="title">Public Key</h1>
-    <pre style="font-size: 20px">E-mail: 714554019@qq.com</pre>
-    <pre style="font-size: 20px">Finger print:</pre>
-    <pre style="font-size: 16px">E010 C4C9 B2EA E272 EF15  0DDD 3099 D4BB 7E40 0971</pre>
-    <a href="/public_key.asc" style="padding: 10px;">plain text</a>
-    <pre class="pubkey">{{publickey}}</pre>
+    <pre class="info">{{pre_info}}</pre>
+    <a href="/public_key.asc" style="display:block;text-align:right;">plain text</a>
+    <pre class="pubkey">{{pre_publickey}}</pre>
   </section>
 </template>
 
-<style>
+<style scoped>
 .container {
   min-height: 100vh;
   max-width: 600px;
-
-  text-align: center;
-
-  margin-top: 70px;
 }
 
 .title {
+  text-align: center;
   font-size: 50px;
-  margin: 10px;
+  margin: 20px;
+}
+
+.info {
+  font-size:16px;
+  font-family: Consolas, monospace;
 }
 
 .pubkey {
-  text-align: left;
   font-size: 16px;
   line-height: 1em;
   font-family: Consolas, monospace;
@@ -35,7 +34,12 @@
 </style>
 
 <script>
-const pub_key = 
+const info = `literal kernel
+E-mail: 714554019@qq.com
+Finger print:
+    E010 C4C9 B2EA E272 EF15  0DDD 3099 D4BB 7E40 0971` ;
+
+const public_key = 
       ['-----BEGIN PGP PUBLIC KEY BLOCK-----',
         '',
         'mQINBFxq0SgBEADImC+Ye/w0WeecFf4/cGhpn2L3jYaNrO52Eu3PQiZp4b5mysaP',
@@ -93,7 +97,8 @@ const pub_key =
 export default {
   data() {
     return {
-      'publickey': pub_key
+      'pre_info':info,
+      'pre_publickey': public_key
     }
   }
 }

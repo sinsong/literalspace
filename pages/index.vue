@@ -24,11 +24,12 @@ export default {
   components: {
     Logo,
     intro
-  }
+  },
+  layout: 'index'
 }
 </script>
 
-<style>
+<style scoped>
 .container {
   margin: 0;
   padding: 0;
