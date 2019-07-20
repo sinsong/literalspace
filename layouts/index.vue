@@ -1,7 +1,11 @@
 <template>
   <div>
-    <navbar nosticky />
+    <navbar index />
     <nuxt />
+    <footer style="text-align:center">
+      <p>©2019 literal kernel, powered by <b-link href="https://nuxtjs.org" target="_blank">Nuxt.js</b-link></p>
+      <p>Made with ❤ by literal kernel</p>
+    </footer>
   </div>
 </template>
 
@@ -24,13 +28,26 @@ html {
   margin: 0;
 }
 
+.bg-literal {
+  background-color: rgba(56, 56, 56, 0.92) !important;
+  /*
+    blue - rgba(100, 149, 237, 0.92)
+    gray - rgba(56, 56, 56, 0.92)
+   */
+}
+
+.nuxt-link-active, .route-link-active{
+  color: #fff !important;
+  font-weight: 6000 !important;
+}
+
 </style>
 
 <script>
-import navbar from '~/components/navbar/navbar.vue'
+import navbar from '~/components/navbar.vue'
 
 export default {
-  components: {
+  components:{
     navbar
   }
 }

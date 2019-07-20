@@ -1,6 +1,6 @@
 <template>
-  <div style="overflow-x: hidden;">
-    <section class="container">
+  <div class="index-page">
+    <section class="container container-intro">
       <intro />
       <div class="links">
         <a href="https://github.com/sinsong/"
@@ -12,6 +12,9 @@
            class="button--green"
         >Bilibili</a>
       </div>
+    </section>
+    <section class="container">
+      <p>Good!</p>
     </section>
   </div>
 </template>
@@ -30,11 +33,18 @@ export default {
 </script>
 
 <style scoped>
+.index-page{
+  overflow-x: hidden;
+}
+
 .container {
   margin: 0;
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
+}
+
+.container-intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,12 +53,6 @@ export default {
   background-image: url(/bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 720px) {
-  .container {
-    background-image: url(/moon-mobie.jpg);
-  }
 }
 
 .links {
