@@ -1,0 +1,22 @@
+language: node_js
+
+node_js:
+  - lts/*
+
+install:
+  - npm install
+
+script:
+  - npm run generate
+
+deploy:
+  privider: pages
+  verbose: true
+  skip_cleanup: true
+  keep_history: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  repo: sinsong/sinsong.github.io
+  target_branch: master
+  on:
+    branch: master

@@ -61,7 +61,12 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+      config.module.rules.push({
+        test: /\.(pub|asc|md)$/,
+        use: [{
+          loader: 'raw-loader'
+        }]
+      })
     }
   },
   server: {
