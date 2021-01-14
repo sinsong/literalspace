@@ -8,21 +8,16 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate"
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.10.3",
-    "@nuxtjs/pwa": "^2.6.0",
-    "bootstrap": "^4.5.0",
-    "bootstrap-vue": "^2.15.0",
-    "minimist": ">=1.2.2",
-    "nuxt": "^2.12.2",
-    "raw-loader": "^4.0.1",
-    "jpeg-js": ">=0.4.0",
-    "node-fetch": ">=2.6.1"
+    "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/pwa": "^3.3.4",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.12",
+    "raw-loader": "^4.0.1"
   },
-  "devDependencies": {
-    "cross-env": "^5.2.1",
-    "nodemon": "^1.19.4"
-  }
+  "devDependencies": {}
 }
